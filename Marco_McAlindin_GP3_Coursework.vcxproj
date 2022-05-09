@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{dbbc729f-db12-4714-8feb-3d9f5138b48a}</ProjectGuid>
+    <RootNamespace>Marco_McAlindin_GP3_Coursework</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Marco_McAlindin_GP3_Coursework</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)SDL2\SDL2-2.0.4\include;$(SolutionDir)glew-2.1.0\include\GL;$(SolutionDir)glm;$(SolutionDir)stb\Include;$(SolutionDir)SDL2\SDL2_mixer-2.0.1\include;$(SolutionDir)assimp;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)SDL2\SDL2_mixer-2.0.1\lib\x86;$(SolutionDir)SDL2\SDL2-2.0.4\lib\x86;$(SolutionDir)glew-2.1.0\lib\Release\Win32;$(SolutionDir)assimp\Lib;$(Solution)bullet\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)SDL2\SDL2-2.0.4\include;$(SolutionDir)glew-2.1.0\include\GL;$(SolutionDir)glm;$(SolutionDir)stb\Include;$(SolutionDir)assimp;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)SDL2\SDL2-2.0.4\lib\x86;$(SolutionDir)glew-2.1.0\lib\Release\Win32;$(SolutionDir)assimp\Lib;$(Solution)bullet\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)SDL2\SDL2-2.0.4\include;$(SolutionDir)glew-2.1.0\include\GL;$(SolutionDir)glm;$(SolutionDir)stb\Include;$(SolutionDir)assimp;$(SolutionDir)bullet;$(SolutionDir)SDL2\SDL2_mixer-2.0.1\include;$(SolutionDir)AntTweakBar\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)SDL2\SDL2-2.0.4\lib\x64;$(SolutionDir)glew-2.1.0\lib\Release\x64;$(SolutionDir)assimp\Lib;$(SolutionDir)bullet\Lib;$(SolutionDir)SDL2\SDL2_mixer-2.0.1\lib\x64;$(SolutionDir)AntTweakBar\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)SDL2\SDL2-2.0.4\include;$(SolutionDir)glew-2.1.0\include\GL;$(SolutionDir)glm;$(SolutionDir)stb\Include;$(SolutionDir)assimp;$(SolutionDir)bullet;$(SolutionDir)SDL2\SDL2_mixer-2.0.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)SDL2\SDL2-2.0.4\lib\x64;$(SolutionDir)glew-2.1.0\lib\Release\x64;$(SolutionDir)assimp\Lib;$(SolutionDir)bullet\Lib;$(SolutionDir)SDL2\SDL2_mixer-2.0.1\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glew32.lib;opengl32.lib;SDL2.lib;SDL2main.lib;assimp.lib;SDL2_mixer.lib</AdditionalDependencies>
+      <TargetMachine>NotSet</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo copying the required libraries and folders
+xcopy /Y /s "$(ProjectDir)Assets\Audio\*.*" "$(OutDir)Assets\Audio\"
+xcopy /Y /s "$(ProjectDir)Assets\Data\*.*" "$(OutDir)Assets\Data\"
+xcopy /Y /s "$(ProjectDir)Assets\Fonts\*.*" "$(OutDir)Assets\Fonts\"
+xcopy /Y /s "$(ProjectDir)Assets\Images\*.*" "$(OutDir)Assets\Images\"
+xcopy /Y /s "$(ProjectDir)Assets\Models\*.*" "$(OutDir)Assets\Models\"
+xcopy /Y /s "$(ProjectDir)Assets\Shaders\*.*" "$(OutDir)Assets\Shaders\"
+xcopy /Y "SDL2\SDL2-2.0.4\lib\x86\SDL2.dll" "$(OutDir)"
+xcopy /Y "SDL2\SDL2_image-2.0.1\lib\x86\*.dll" "$(OutDir)"
+xcopy /Y "SDL2\SDL2_ttf-2.0.14\lib\x86\*.dll" "$(OutDir)"
+xcopy /Y "SDL2\SDL2_mixer-2.0.1\lib\x86\*.dll" "$(OutDir)"
+xcopy /Y "glew-2.1.0\bin\Release\Win32\*.dll" "$(OutDir)"
+xcopy /Y "assimp\Lib\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glew32.lib;opengl32.lib;SDL2.lib;SDL2main.lib;assimp.lib</AdditionalDependencies>
+      <TargetMachine>NotSet</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo copying the required libraries and folders
+xcopy /Y /s "$(ProjectDir)Assets\Audio\*.*" "$(OutDir)Assets\Audio\"
+xcopy /Y /s "$(ProjectDir)Assets\Data\*.*" "$(OutDir)Assets\Data\"
+xcopy /Y /s "$(ProjectDir)Assets\Fonts\*.*" "$(OutDir)Assets\Fonts\"
+xcopy /Y /s "$(ProjectDir)Assets\Images\*.*" "$(OutDir)Assets\Images\"
+xcopy /Y /s "$(ProjectDir)Assets\Models\*.*" "$(OutDir)Assets\Models\"
+xcopy /Y /s "$(ProjectDir)Assets\Shaders\*.*" "$(OutDir)Assets\Shaders\"
+xcopy /Y "SDL2\SDL2-2.0.4\lib\x86\SDL2.dll" "$(OutDir)"
+xcopy /Y "SDL2\SDL2_image-2.0.1\lib\x86\*.dll" "$(OutDir)"
+xcopy /Y "SDL2\SDL2_ttf-2.0.14\lib\x86\*.dll" "$(OutDir)"
+xcopy /Y "SDL2\SDL2_mixer-2.0.1\lib\x86\*.dll" "$(OutDir)"
+xcopy /Y "glew-2.1.0\bin\Release\Win32\*.dll" "$(OutDir)"
+xcopy /Y "assimp\Lib\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glew32.lib;opengl32.lib;SDL2.lib;SDL2main.lib;assimp.lib;BulletCollision_Debug.lib;BulletDynamics_Debug.lib;LinearMath_Debug.lib;SDL2_mixer.lib;AntTweakBar64.lib</AdditionalDependencies>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo copying the required libraries and folders
+xcopy /Y /s "$(ProjectDir)Assets\Audio\*.*" "$(OutDir)Assets\Audio\"
+xcopy /Y /s "$(ProjectDir)Assets\Data\*.*" "$(OutDir)Assets\Data\"
+xcopy /Y /s "$(ProjectDir)Assets\Fonts\*.*" "$(OutDir)Assets\Fonts\"
+xcopy /Y /s "$(ProjectDir)Assets\Images\*.*" "$(OutDir)Assets\Images\"
+xcopy /Y /s "$(ProjectDir)Assets\Models\*.*" "$(OutDir)Assets\Models\"
+xcopy /Y /s "$(ProjectDir)Assets\Shaders\*.*" "$(OutDir)Assets\Shaders\"
+xcopy /Y "SDL2\SDL2-2.0.4\lib\x64\SDL2.dll" "$(OutDir)"
+xcopy /Y "SDL2\SDL2_image-2.0.1\lib\x64\*.dll" "$(OutDir)"
+xcopy /Y "SDL2\SDL2_ttf-2.0.14\lib\x64\*.dll" "$(OutDir)"
+xcopy /Y "SDL2\SDL2_mixer-2.0.1\lib\x64\*.dll" "$(OutDir)"
+xcopy /Y "glew-2.1.0\bin\Release\x64\*.dll" "$(OutDir)"
+xcopy /Y "assimp\Lib\*.dll" "$(OutDir)"
+xcopy /Y "bullet\Lib\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glew32.lib;opengl32.lib;SDL2.lib;SDL2main.lib;assimp.lib;BulletCollision_Debug.lib;BulletDynamics_Debug.lib;LinearMath_Debug.lib;SDL2_mixer.lib</AdditionalDependencies>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo copying the required libraries and folders
+xcopy /Y /s "$(ProjectDir)Assets\Audio\*.*" "$(OutDir)Assets\Audio\"
+xcopy /Y /s "$(ProjectDir)Assets\Data\*.*" "$(OutDir)Assets\Data\"
+xcopy /Y /s "$(ProjectDir)Assets\Fonts\*.*" "$(OutDir)Assets\Fonts\"
+xcopy /Y /s "$(ProjectDir)Assets\Images\*.*" "$(OutDir)Assets\Images\"
+xcopy /Y /s "$(ProjectDir)Assets\Models\*.*" "$(OutDir)Assets\Models\"
+xcopy /Y /s "$(ProjectDir)Assets\Shaders\*.*" "$(OutDir)Assets\Shaders\"
+xcopy /Y "SDL2\SDL2-2.0.4\lib\x64\SDL2.dll" "$(OutDir)"
+xcopy /Y "SDL2\SDL2_image-2.0.1\lib\x64\*.dll" "$(OutDir)"
+xcopy /Y "SDL2\SDL2_ttf-2.0.14\lib\x64\*.dll" "$(OutDir)"
+xcopy /Y "SDL2\SDL2_mixer-2.0.1\lib\x64\*.dll" "$(OutDir)"
+xcopy /Y "glew-2.1.0\bin\Release\x64\*.dll" "$(OutDir)"
+xcopy /Y "assimp\Lib\*.dll" "$(OutDir)"
+xcopy /Y "bullet\Lib\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="Animator.cpp" />
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Bone.cpp" />
+    <ClCompile Include="BoxShape.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CameraButton.cpp" />
+    <ClCompile Include="CameraComponent.cpp" />
+    <ClCompile Include="CharacterController.cpp" />
+    <ClCompile Include="CollisionShape.cpp" />
+    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="DirectionalLight.cpp" />
+    <ClCompile Include="EnemyComponent.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="Fog.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameOverScene.cpp" />
+    <ClCompile Include="GameScene.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="InstructionsScene.cpp" />
+    <ClCompile Include="LevelViewCamera.cpp" />
+    <ClCompile Include="MainMenuButton.cpp" />
+    <ClCompile Include="MainMenuScene.cpp" />
+    <ClCompile Include="Marco_McAlindin_GP3_Coursework.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="MeshRenderer.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="PauseButton.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Physics.cpp" />
+    <ClCompile Include="PlayerComponent.cpp" />
+    <ClCompile Include="PointLight.cpp" />
+    <ClCompile Include="QuitButton.cpp" />
+    <ClCompile Include="Resources.cpp" />
+    <ClCompile Include="RestartButton.cpp" />
+    <ClCompile Include="RigidBody.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="ShaderProgram.cpp" />
+    <ClCompile Include="Skybox.cpp" />
+    <ClCompile Include="Sound.cpp" />
+    <ClCompile Include="SoundButton.cpp" />
+    <ClCompile Include="SoundMgr.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="StartButton.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="ThirdPersonCamera.cpp" />
+    <ClCompile Include="Transform.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="Animator.h" />
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="Bone.h" />
+    <ClInclude Include="BoxShape.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CameraButton.h" />
+    <ClInclude Include="CameraComponent.h" />
+    <ClInclude Include="CharacterController.h" />
+    <ClInclude Include="CollisionShape.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="Components.h" />
+    <ClInclude Include="DirectionalLight.h" />
+    <ClInclude Include="EnemyComponent.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="Fog.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameOverScene.h" />
+    <ClInclude Include="GameScene.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="InputState.h" />
+    <ClInclude Include="InstructionsScene.h" />
+    <ClInclude Include="LevelViewCamera.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="MainMenuButton.h" />
+    <ClInclude Include="MainMenuScene.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="MeshRenderer.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="PauseButton.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Physics.h" />
+    <ClInclude Include="PlayerComponent.h" />
+    <ClInclude Include="PointLight.h" />
+    <ClInclude Include="Quad.h" />
+    <ClInclude Include="QuitButton.h" />
+    <ClInclude Include="Resources.h" />
+    <ClInclude Include="RestartButton.h" />
+    <ClInclude Include="RigidBody.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="ShaderProgram.h" />
+    <ClInclude Include="Skybox.h" />
+    <ClInclude Include="Sound.h" />
+    <ClInclude Include="SoundButton.h" />
+    <ClInclude Include="SoundMgr.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="StartButton.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="ThirdPersonCamera.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="Vertex.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Shaders\model_animation.fs" />
+    <None Include="Assets\Shaders\model_animation.vs" />
+    <None Include="Assets\Shaders\lighting.fs" />
+    <None Include="Assets\Shaders\lighting.vs" />
+    <None Include="Assets\Shaders\skyboxShader.frag" />
+    <None Include="Assets\Shaders\skyboxShader.vert" />
+    <None Include="Assets\Shaders\Texture.fs" />
+    <None Include="Assets\Shaders\Texture.vs" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

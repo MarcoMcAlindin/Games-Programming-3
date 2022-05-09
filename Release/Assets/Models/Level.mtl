@@ -1,0 +1,13 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl cottage_texture
+Ns 96.078408
+Ka 1.000000 1.000000 1.000000
+Kd 0.631400 0.643100 0.662700
+Ks 0.340000 0.340000 0.340000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd WildGrass_2_UR_1024.png
